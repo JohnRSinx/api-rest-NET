@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace entities
 {
     public class UserEntity {
+
       [Key]
       [Column("id")]
       public string Id { get; init;}= Guid.NewGuid().ToString();
