@@ -12,7 +12,7 @@ public class PasswordService
 
     public bool VerifyPassword(string passwordSaved, string password)
     {
-        // Verificando a senha
+        // Verifica a senha
         var result = passwordHasher.VerifyHashedPassword(null!, passwordSaved, password);
 
         if (result == PasswordVerificationResult.Success)
